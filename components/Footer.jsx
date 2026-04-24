@@ -75,6 +75,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <RiPhoneLine className="text-[#007aff] text-xl shrink-0" />
                 <p>+91 98845 46406</p>
+                <p>+91 9994474395</p>
               </div>
               <div className="flex items-center gap-3">
                 <RiMailLine className="text-[#007aff] text-xl shrink-0" />
