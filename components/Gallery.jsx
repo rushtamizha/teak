@@ -41,7 +41,7 @@ const galleryImages = [
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header Section */}
