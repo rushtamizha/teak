@@ -47,20 +47,20 @@ const Packages = () => {
         {/* Toggle & Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
           <div className="max-w-xl">
-            <span className="text-[#007aff] font-black uppercase tracking-[0.3em] text-[11px]">Featured Packages</span>
-            <h2 className="text-4xl font-black text-[#253061] mt-2 italic font-serif">Curated Collections</h2>
+            <span className="text-[#007aff] font-semibold uppercase tracking-[0.3em] text-[11px]">Featured Packages</span>
+            <h2 className="text-3xl font-semibold text-[#253061] mt-2  font-serif">Curated Collections</h2>
           </div>
 
           <div className="inline-flex justify-between p-1.5 bg-white border border-gray-100 rounded-full shadow-sm">
             <button
               onClick={() => setActiveTab("Domestic")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full transition-all text-sm font-bold ${activeTab === "Domestic" ? "bg-[#253061] text-white shadow-lg" : "text-gray-500 hover:bg-gray-50"}`}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full transition-all text-sm font-semibold ${activeTab === "Domestic" ? "bg-[#253061] text-white shadow-lg" : "text-gray-500 hover:bg-gray-50"}`}
             >
               <FaMapMarkedAlt /> Domestic
             </button>
             <button
               onClick={() => setActiveTab("International")}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-full transition-all text-sm font-bold ${activeTab === "International" ? "bg-[#253061] text-white shadow-lg" : "text-gray-500 hover:bg-gray-50"}`}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full transition-all text-sm font-semibold ${activeTab === "International" ? "bg-[#253061] text-white shadow-lg" : "text-gray-500 hover:bg-gray-50"}`}
             >
               <FaGlobeAmericas /> International
             </button>
@@ -101,7 +101,7 @@ const Packages = () => {
                       />
                       <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
                         <RiTimeLine className="text-[#007aff]" />
-                        <span className="text-[11px] font-black text-[#253061] tracking-wider">{pkg.duration}</span>
+                        <span className="text-[11px] font-semibold text-[#253061] tracking-wider">{pkg.duration}</span>
                       </div>
                     </div>
 
@@ -109,9 +109,9 @@ const Packages = () => {
                     <div className="p-8">
                       <div className="flex items-center gap-2 text-[#007aff] mb-2">
                         <RiMapPin2Line />
-                        <span className="text-[11px] font-black uppercase tracking-widest">{pkg.location}</span>
+                        <span className="text-[11px] font-semibold uppercase tracking-widest">{pkg.location}</span>
                       </div>
-                      <h3 className="text-2xl font-black text-[#253061] mb-3 group-hover:text-[#007aff] transition-colors">
+                      <h3 className="text-2xl font-semibold text-[#253061] mb-3 group-hover:text-[#007aff] transition-colors">
                         {pkg.title}
                       </h3>
                       <p className="text-gray-500 font-medium text-sm leading-relaxed mb-8">
@@ -120,7 +120,7 @@ const Packages = () => {
 
                       <button
                         onClick={() => handleWhatsApp(pkg.title)}
-                        className="w-full flex items-center justify-center gap-3 bg-[#253061] text-white py-4 rounded-2xl font-bold hover:bg-[#007aff] transition-all duration-300 shadow-lg shadow-[#253061]/10 group/btn"
+                        className="w-full flex items-center justify-center gap-3 bg-[#253061] text-white py-4 rounded-2xl font-semibold hover:bg-[#007aff] transition-all duration-300 shadow-lg shadow-[#253061]/10 group/btn"
                       >
                         <FaWhatsapp className="text-xl" />
                         Enquire Now

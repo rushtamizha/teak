@@ -23,17 +23,17 @@ const HoneymoonHero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 rounded-full text-rose-600 shadow-sm"
             >
               <RiHeartFill className="animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em]">India's Trusted Honeymoon Boutique</span>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em]">India's Trusted Honeymoon Boutique</span>
             </motion.div>
 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-black text-[#253061] leading-[1.1]"
+              className="text-3xl md:text-3xl font-semibold text-[#253061] leading-[1.1]"
             >
               Beyond Trips. <br />
-              <span className="text-[#007aff] font-serif italic font-medium">Romantic Journeys.</span>
+              <span className="text-[#007aff] font-serif  font-medium">Romantic Journeys.</span>
             </motion.h1>
 
             <motion.p 
@@ -54,7 +54,7 @@ const HoneymoonHero = () => {
             >
               <button 
                 onClick={() => window.open('https://wa.me/919884546406', '_blank')}
-                className="flex items-center justify-center gap-3 bg-[#253061] text-white px-10 py-5 rounded-2xl font-black text-sm tracking-widest hover:bg-[#007aff] transition-all shadow-2xl shadow-[#253061]/20 group"
+                className="flex items-center justify-center gap-3 bg-[#253061] text-white px-10 py-5 rounded-2xl font-semibold text-sm tracking-widest hover:bg-[#007aff] transition-all shadow-2xl shadow-[#253061]/20 group"
               >
                 <FaWhatsapp className="text-xl group-hover:rotate-12 transition-transform" />
                 PLAN MY HONEYMOON
@@ -72,7 +72,7 @@ const HoneymoonHero = () => {
                   <div className="flex text-amber-400">
                     {[...Array(5)].map((_, i) => <RiStarSLine key={i} />)}
                   </div>
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tighter">500+ Happy Couples</p>
+                  <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-tighter">500+ Happy Couples</p>
                 </div>
               </div>
             </motion.div>
@@ -86,11 +86,11 @@ const HoneymoonHero = () => {
             >
               <div className="flex items-center gap-3">
                 <RiShieldCheckLine className="text-[#007aff] text-2xl" />
-                <span className="text-[11px] font-bold text-[#253061] uppercase leading-tight">Backed by <br/>Teakwood Travels</span>
+                <span className="text-[11px] font-semibold text-[#253061] uppercase leading-tight">Backed by <br/>Teakwood Travels</span>
               </div>
               <div className="flex items-center gap-3">
                 <RiMapPinRangeLine className="text-[#007aff] text-2xl" />
-                <span className="text-[11px] font-bold text-[#253061] uppercase leading-tight">Pondicherry <br/>Local Experts</span>
+                <span className="text-[11px] font-semibold text-[#253061] uppercase leading-tight">Pondicherry <br/>Local Experts</span>
               </div>
             </motion.div>
           </div>
@@ -111,8 +111,8 @@ const HoneymoonHero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#253061]/60 to-transparent" />
               <div className="absolute bottom-8 left-8">
-                <p className="text-white/80 text-xs font-black uppercase tracking-widest mb-1">Signature Package</p>
-                <p className="text-white text-2xl font-bold">French Quarter Escape, Pondicherry</p>
+                <p className="text-white/80 text-xs font-semibold uppercase tracking-widest mb-1">Signature Package</p>
+                <p className="text-white text-2xl font-semibold">French Quarter Escape, Pondicherry</p>
               </div>
             </div>
 
@@ -127,8 +127,8 @@ const HoneymoonHero = () => {
                   <RiHeartFill />
                 </div>
                 <div>
-                  <p className="text-[#253061] font-black text-sm">Honeymoon Decor</p>
-                  <p className="text-gray-400 text-[10px] font-bold">COMPLIMENTARY INCLUSION</p>
+                  <p className="text-[#253061] font-semibold text-sm">Honeymoon Decor</p>
+                  <p className="text-gray-400 text-[10px] font-semibold">COMPLIMENTARY INCLUSION</p>
                 </div>
               </div>
             </motion.div>
@@ -144,8 +144,8 @@ const HoneymoonHero = () => {
                   <FaWhatsapp />
                 </div>
                 <div>
-                  <p className="text-[#253061] font-black text-sm">Personal Assistant</p>
-                  <p className="text-gray-400 text-[10px] font-bold">24/7 ON-TRIP SUPPORT</p>
+                  <p className="text-[#253061] font-semibold text-sm">Personal Assistant</p>
+                  <p className="text-gray-400 text-[10px] font-semibold">24/7 ON-TRIP SUPPORT</p>
                 </div>
               </div>
             </motion.div>

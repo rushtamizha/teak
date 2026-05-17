@@ -60,14 +60,14 @@ const Services = () => {
           <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-[#007aff] font-black uppercase tracking-[0.3em] text-[11px]"
+            className="text-[#007aff] font-semibold uppercase tracking-[0.3em] text-[11px]"
           >
             Professional Excellence
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-black text-[#253061] mt-4 leading-tight"
+            className="text-3xl md:text-3xl font-semibold text-[#253061] mt-4 leading-tight"
           >
             Comprehensive Travel Solutions <br /> 
             <span className="text-gray-500">Tailored for You.</span>
@@ -91,7 +91,7 @@ const Services = () => {
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-8 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 ${service.color}`}>
                 {service.icon}
               </div>
-              <h3 className="text-xl font-black text-[#253061] mb-4">
+              <h3 className="text-xl font-semibold text-[#253061] mb-4">
                 {service.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed font-medium">

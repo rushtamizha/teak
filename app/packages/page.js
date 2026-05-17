@@ -30,12 +30,12 @@ const PackageListing = () => {
           <motion.span 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-[#007aff] font-black uppercase tracking-[0.3em] text-[11px] mb-4"
+            className="text-[#007aff] font-semibold uppercase tracking-[0.3em] text-[11px] mb-4"
           >
             Curated Collections
           </motion.span>
-          <h1 className="text-4xl md:text-6xl font-black text-[#253061] mb-10 leading-tight">
-            Premium <span className="text-[#007aff] italic font-serif">Honeymoon</span> Plans.
+          <h1 className="text-3xl md:text-3xl font-semibold text-[#253061] mb-10 leading-tight">
+            Premium <span className="text-[#007aff]  font-serif">Honeymoon</span> Plans.
           </h1>
 
           {/* Main Toggle Switch */}
@@ -52,7 +52,7 @@ const PackageListing = () => {
             />
             <button
               onClick={() => setActiveTab("Domestic")}
-              className={`relative z-10 flex items-center gap-2 px-8 py-3 rounded-full text-sm font-black transition-colors ${
+              className={`relative z-10 flex items-center gap-2 px-8 py-3 rounded-full text-sm font-semibold transition-colors ${
                 activeTab === "Domestic" ? "text-white" : "text-gray-400 hover:text-[#253061]"
               }`}
             >
@@ -60,7 +60,7 @@ const PackageListing = () => {
             </button>
             <button
               onClick={() => setActiveTab("International")}
-              className={`relative z-10 flex items-center gap-2 px-8 py-3 rounded-full text-sm font-black transition-colors ${
+              className={`relative z-10 flex items-center gap-2 px-8 py-3 rounded-full text-sm font-semibold transition-colors ${
                 activeTab === "International" ? "text-white" : "text-gray-400 hover:text-[#253061]"
               }`}
             >
@@ -100,7 +100,7 @@ const PackageListing = () => {
                     alt={pkg.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   />
-                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-black text-[#253061] uppercase tracking-widest shadow-sm flex items-center gap-2">
+                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-semibold text-[#253061] uppercase tracking-widest shadow-sm flex items-center gap-2">
                     <RiMapPin2Line className="text-[#007aff]" /> {pkg.location}
                   </div>
                 </div>
@@ -109,9 +109,9 @@ const PackageListing = () => {
                 <div className="p-8">
                   <div className="flex items-center gap-2 mb-3 text-[#007aff]">
                      <RiTimeLine size={16} />
-                     <span className="text-[11px] font-black uppercase tracking-widest">{pkg.duration}</span>
+                     <span className="text-[11px] font-semibold uppercase tracking-widest">{pkg.duration}</span>
                   </div>
-                  <h3 className="text-2xl font-black text-[#253061] mb-4 leading-tight group-hover:text-[#007aff] transition-colors">
+                  <h3 className="text-2xl font-semibold text-[#253061] mb-4 leading-tight group-hover:text-[#007aff] transition-colors">
                     {pkg.title}
                   </h3>
                   
@@ -121,7 +121,7 @@ const PackageListing = () => {
 
                   <button
                     onClick={() => handleWhatsApp(pkg)}
-                    className="w-full py-4 bg-[#253061] text-white rounded-2xl font-black text-[13px] flex items-center justify-center gap-3 hover:bg-[#007aff] transition-all group/btn shadow-xl shadow-[#253061]/10"
+                    className="w-full py-4 bg-[#253061] text-white rounded-2xl font-semibold text-[13px] flex items-center justify-center gap-3 hover:bg-[#007aff] transition-all group/btn shadow-xl shadow-[#253061]/10"
                   >
                     <RiWhatsappLine size={20} className="group-hover/btn:scale-110 transition-transform" />
                     ENQUIRE VIA WHATSAPP
@@ -135,7 +135,7 @@ const PackageListing = () => {
         {/* Empty State */}
         {filteredPackages.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-gray-400 font-bold uppercase tracking-widest text-xs">No packages found in this collection.</p>
+            <p className="text-gray-400 font-semibold uppercase tracking-widest text-xs">No packages found in this collection.</p>
           </div>
         )}
 

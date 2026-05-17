@@ -51,11 +51,11 @@ const Testimonials = () => {
             <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="text-[#007aff] font-black uppercase tracking-[0.3em] text-[11px]"
+              className="text-[#007aff] font-semibold uppercase tracking-[0.3em] text-[11px]"
             >
               Guest Experiences
             </motion.span>
-            <h2 className="text-4xl md:text-5xl font-black text-[#253061] mt-4 leading-tight">
+            <h2 className="text-3xl md:text-3xl font-semibold text-[#253061] mt-4 leading-tight">
               What Our <br /> Couples Say.
             </h2>
             <p className="mt-6 text-gray-500 font-medium leading-relaxed">
@@ -85,10 +85,10 @@ const Testimonials = () => {
                 ))}
               </div>
               <div>
-                <p className="text-[#253061] font-black text-sm">
+                <p className="text-[#253061] font-semibold text-sm">
                   4.9/5 Rating
                 </p>
-                <p className="text-[11px] text-gray-400 font-bold uppercase tracking-widest">
+                <p className="text-[11px] text-gray-400 font-semibold uppercase tracking-widest">
                   On Google Reviews
                 </p>
               </div>
@@ -110,7 +110,7 @@ const Testimonials = () => {
               {reviews.map((review, index) => (
                 <SwiperSlide key={index}>
                   <motion.div className="bg-white p-10 rounded-[3rem] shadow-xs border border-gray-50 h-full relative m-2">
-                    <RiDoubleQuotesR className="absolute top-8 right-10 text-gray-100 text-6xl -z-0" />
+                    <RiDoubleQuotesR className="absolute top-8 right-10 text-gray-100 text-3xl -z-0" />
 
                     <div className="relative z-10">
                       <div className="flex gap-1 mb-6">
@@ -123,17 +123,17 @@ const Testimonials = () => {
                         ))}
                       </div>
 
-                      <p className="text-[#253061] font-medium leading-relaxed italic mb-8">
+                      <p className="text-[#253061] font-medium leading-relaxed  mb-8">
                         "{review.text}"
                       </p>
 
                       <div className="flex items-center gap-4 pt-6 border-t border-gray-50">
-                        <div className="w-12 h-12 rounded-2xl bg-[#253061]/5 flex items-center justify-center text-[#253061] font-black">
+                        <div className="w-12 h-12 rounded-2xl bg-[#253061]/5 flex items-center justify-center text-[#253061] font-semibold">
                           {review.name.charAt(0)}
                         </div>
                         <div>
                           <div className="flex items-center gap-2">
-                            <h4 className="font-black text-[#253061] text-[15px]">
+                            <h4 className="font-semibold text-[#253061] text-[15px]">
                               {review.name}
                             </h4>
                             <RiCheckboxCircleFill
@@ -142,7 +142,7 @@ const Testimonials = () => {
                               title="Verified Traveler"
                             />
                           </div>
-                          <p className="text-[11px] text-[#007aff] font-bold uppercase tracking-widest">
+                          <p className="text-[11px] text-[#007aff] font-semibold uppercase tracking-widest">
                             {review.location}
                           </p>
                         </div>

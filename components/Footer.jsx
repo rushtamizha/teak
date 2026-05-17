@@ -22,7 +22,7 @@ const Footer = () => {
           
           {/* Column 1: Brand & Bio */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-black tracking-tighter">
+            <h2 className="text-2xl font-semibold tracking-tighter">
               TEAKWOOD<span className="text-[#007aff]">HOLIDAYS</span>
             </h2>
             <p className="text-white/60 text-sm font-medium leading-relaxed">
@@ -44,8 +44,8 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Quick Links</h4>
-            <ul className="space-y-4 text-sm font-bold text-white/70">
+            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Quick Links</h4>
+            <ul className="space-y-4 text-sm font-semibold text-white/70">
               <li><Link href="/about" className="hover:text-white transition-colors">Our Story</Link></li>
               <li><Link href="/packages" className="hover:text-white transition-colors">Honeymoon Packages</Link></li>
               <li><Link href="/#services" className="hover:text-white transition-colors">Specialist Services</Link></li>
@@ -55,8 +55,8 @@ const Footer = () => {
 
           {/* Column 3: Top Destinations */}
           <div>
-            <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Destinations</h4>
-            <ul className="space-y-4 text-sm font-bold text-white/70">
+            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Destinations</h4>
+            <ul className="space-y-4 text-sm font-semibold text-white/70">
               <li><Link href="/packages" className="hover:text-white transition-colors">Pondicherry Specialist</Link></li>
               <li><Link href="/packages" className="hover:text-white transition-colors">Munnar Tea Gardens</Link></li>
               <li><Link href="/packages" className="hover:text-white transition-colors">Alleppey Houseboats</Link></li>
@@ -66,7 +66,7 @@ const Footer = () => {
 
           {/* Column 4: Contact Details (From your File) */}
           <div className="space-y-6">
-            <h4 className="font-black text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Reach Us</h4>
+            <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Reach Us</h4>
             <div className="space-y-4 text-sm font-medium text-white/70">
               <div className="flex items-start gap-3">
                 <RiMapPin2Line className="text-[#007aff] text-xl shrink-0" />
@@ -87,16 +87,16 @@ const Footer = () => {
 
         {/* Bottom Bar: Copyright & Wepzite Credit */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[11px] font-bold text-white/30 uppercase tracking-widest">
+          <p className="text-[11px] font-semibold text-white/30 uppercase tracking-widest">
             © {currentYear} Teakwood Holidays. All Rights Reserved.
           </p>
           
-          <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-white/30">
+          <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-white/30">
             <span>Developed by</span>
             <Link 
               href="https://wepzite.in" 
               target="_blank"
-              className="text-[#007aff] hover:text-white transition-colors font-black"
+              className="text-[#007aff] hover:text-white transition-colors font-semibold"
             >
               Wepzite.in
             </Link>

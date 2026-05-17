@@ -50,16 +50,16 @@ const Gallery = () => {
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-2 text-[#007aff] text-[11px] font-black uppercase tracking-[0.3em] mb-4"
+              className="flex items-center gap-2 text-[#007aff] text-[11px] font-semibold uppercase tracking-[0.3em] mb-4"
             >
               <RiCameraLensLine className="text-lg" /> Captured Memories
             </motion.div>
             <motion.h2 
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-black text-[#253061] leading-tight"
+              className="text-3xl md:text-3xl font-semibold text-[#253061] leading-tight"
             >
-              Explore Our <span className="text-gray-400 italic font-serif font-medium">Visual Gallery</span>
+              Explore Our <span className="text-gray-400  font-serif font-medium">Visual Gallery</span>
             </motion.h2>
           </div>
 
@@ -105,9 +105,9 @@ const Gallery = () => {
                   <div className="absolute hidden bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-[2rem] translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                     <div className="flex items-center gap-2 text-white/80 mb-1">
                       <RiMapPin2Line className="text-[#007aff]" />
-                      <span className="text-[10px] font-black uppercase tracking-widest">{item.location}</span>
+                      <span className="text-[10px] font-semibold uppercase tracking-widest">{item.location}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                   </div>
 
                   {/* Subtle Gradient for better text readability on hover */}

@@ -43,12 +43,12 @@ const ModernHoneymoonHome = () => {
             animate={{ opacity: 1, x: 0 }}
             className="z-10"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-600 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-600 rounded-full text-[10px] font-semibold uppercase tracking-widest mb-6">
               <RiHeartFill className="animate-pulse" /> India's Romantic Escape Specialist
             </div>
-            <h1 className="text-5xl md:text-7xl font-black leading-[1.1] mb-6">
+            <h1 className="text-3xl md:text-3xl font-semibold leading-[1.1] mb-6">
               Start Your <br />
-              <span className="text-[#007aff] italic font-serif font-medium">Forever</span> Here.
+              <span className="text-[#007aff]  font-serif font-medium">Forever</span> Here.
             </h1>
             <p className="text-gray-500 text-lg md:text-xl font-medium mb-10 max-w-lg">
               Boutique honeymoon planning backed by the legacy of Teakwood Travels. 
@@ -58,11 +58,11 @@ const ModernHoneymoonHome = () => {
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => handleWhatsApp()}
-                className="bg-[#253061] text-white px-10 py-5 rounded-2xl font-black text-xs tracking-widest hover:bg-[#007aff] transition-all flex items-center gap-3 shadow-2xl shadow-[#253061]/20"
+                className="bg-[#253061] text-white px-10 py-5 rounded-2xl font-semibold text-xs tracking-widest hover:bg-[#007aff] transition-all flex items-center gap-3 shadow-2xl shadow-[#253061]/20"
               >
                 <RiWhatsappLine size={20} /> PLAN MY JOURNEY
               </button>
-              <div className="flex items-center gap-3 px-4 text-sm font-bold">
+              <div className="flex items-center gap-3 px-4 text-sm font-semibold">
                 <div className="flex text-amber-400"><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /></div>
                 <span>500+ Happy Couples</span>
               </div>
@@ -82,8 +82,8 @@ const ModernHoneymoonHome = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#253061]/80 via-transparent to-transparent" />
             <div className="absolute bottom-10 left-10 text-white">
-              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-teal-400 mb-2">Signature Experience</p>
-              <h3 className="text-3xl font-bold italic font-serif">French Quarter, Pondicherry</h3>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-teal-400 mb-2">Signature Experience</p>
+              <h3 className="text-3xl font-semibold  font-serif">French Quarter, Pondicherry</h3>
             </div>
           </motion.div>
         </div>
@@ -94,20 +94,20 @@ const ModernHoneymoonHome = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-xl text-center md:text-left">
-              <span className="text-[#007aff] font-black uppercase tracking-[0.2em] text-[10px]">Curated Collections</span>
-              <h2 className="text-4xl font-black mt-2 leading-tight">Explore Destinations</h2>
+              <span className="text-[#007aff] font-semibold uppercase tracking-[0.2em] text-[10px]">Curated Collections</span>
+              <h2 className="text-3xl font-semibold mt-2 leading-tight">Explore Destinations</h2>
             </div>
             
             <div className="p-1 bg-white border border-gray-100 rounded-full shadow-sm flex items-center">
               <button 
                 onClick={() => setActiveTab("domestic")}
-                className={`px-8 py-3 rounded-full text-xs font-black transition-all flex items-center gap-2 ${activeTab === "domestic" ? "bg-[#253061] text-white" : "text-gray-400"}`}
+                className={`px-8 py-3 rounded-full text-xs font-semibold transition-all flex items-center gap-2 ${activeTab === "domestic" ? "bg-[#253061] text-white" : "text-gray-400"}`}
               >
                 <RiMapPinUserLine /> DOMESTIC
               </button>
               <button 
                 onClick={() => setActiveTab("international")}
-                className={`px-8 py-3 rounded-full text-xs font-black transition-all flex items-center gap-2 ${activeTab === "international" ? "bg-[#253061] text-white" : "text-gray-400"}`}
+                className={`px-8 py-3 rounded-full text-xs font-semibold transition-all flex items-center gap-2 ${activeTab === "international" ? "bg-[#253061] text-white" : "text-gray-400"}`}
               >
                 <RiGlobalLine /> INTERNATIONAL
               </button>
@@ -129,11 +129,11 @@ const ModernHoneymoonHome = () => {
                     <img src={pkg.img} className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" alt={pkg.name} />
                   </div>
                   <div className="px-4 pb-4">
-                    <h4 className="text-xl font-black mb-1">{pkg.name}</h4>
-                    <p className="text-gray-400 text-sm font-bold mb-6">{pkg.price}</p>
+                    <h4 className="text-xl font-semibold mb-1">{pkg.name}</h4>
+                    <p className="text-gray-400 text-sm font-semibold mb-6">{pkg.price}</p>
                     <button 
                       onClick={() => handleWhatsApp(pkg.name)}
-                      className="w-full py-4 rounded-2xl border border-gray-100 flex items-center justify-center gap-2 font-black text-[11px] uppercase tracking-widest hover:bg-[#253061] hover:text-white transition-all"
+                      className="w-full py-4 rounded-2xl border border-gray-100 flex items-center justify-center gap-2 font-semibold text-[11px] uppercase tracking-widest hover:bg-[#253061] hover:text-white transition-all"
                     >
                       View Details <RiArrowRightLine />
                     </button>
@@ -148,24 +148,24 @@ const ModernHoneymoonHome = () => {
       {/* 3. FOUNDER TRUST SECTION */}
       <section className="py-24 px-6 lg:px-12 max-w-5xl mx-auto">
         <div className="bg-[#253061] rounded-[3rem] p-10 md:p-16 text-white flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
-          <div className="w-48 h-48 rounded-[2.5rem] bg-slate-700/50 flex-shrink-0 flex items-center justify-center text-5xl italic font-serif">K</div>
+          <div className="w-48 h-48 rounded-[2.5rem] bg-slate-700/50 flex-shrink-0 flex items-center justify-center text-3xl  font-serif">K</div>
           <div className="relative z-10 text-center md:text-left">
-            <h3 className="text-3xl font-black mb-4 leading-tight italic font-serif">
+            <h3 className="text-3xl font-semibold mb-4 leading-tight  font-serif">
               "Every trip is a new story. We make sure yours is worth telling."
             </h3>
             <div className="flex flex-col md:flex-row md:items-center gap-6 mb-8">
               <div>
-                <p className="text-teal-400 font-black uppercase text-[10px] tracking-widest">Karunagaran</p>
+                <p className="text-teal-400 font-semibold uppercase text-[10px] tracking-widest">Karunagaran</p>
                 <p className="text-slate-400 text-xs">Founder, Teakwood Holidays</p>
               </div>
               <div className="h-10 w-[1px] bg-white/10 hidden md:block" />
-              <div className="flex items-center gap-2 text-xs font-bold">
+              <div className="flex items-center gap-2 text-xs font-semibold">
                 <RiShieldCheckLine className="text-teal-400 text-xl" /> Backed by Teakwood Travels
               </div>
             </div>
             <button 
               onClick={() => handleWhatsApp()}
-              className="bg-teal-500 text-[#253061] px-8 py-4 rounded-2xl font-black text-[11px] tracking-widest hover:bg-white transition-all"
+              className="bg-teal-500 text-[#253061] px-8 py-4 rounded-2xl font-semibold text-[11px] tracking-widest hover:bg-white transition-all"
             >
               CHAT WITH THE EXPERT
             </button>

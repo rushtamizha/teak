@@ -40,8 +40,8 @@ const AboutSection = () => {
               transition={{ delay: 0.3 }}
               className="absolute -bottom-10 -right-0 lg:-right-10 z-20 bg-[#253061] text-white p-5 rounded-[2rem] shadow-2xl max-w-[280px]"
             >
-              <p className="text-[#007aff] font-black text-4xl mb-1">12+</p>
-              <p className="text-sm font-bold opacity-80 leading-tight">Handpicked Romantic Destinations across South India</p>
+              <p className="text-[#007aff] font-semibold text-3xl mb-1">12+</p>
+              <p className="text-sm font-medium  leading-tight">Handpicked Romantic Destinations across South India</p>
               <div className="mt-4 w-12 h-1 bg-[#007aff] rounded-full" />
             </motion.div>
 
@@ -56,18 +56,18 @@ const AboutSection = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-[#007aff] font-black uppercase tracking-[0.3em] text-[11px]">Our Story</span>
+              <span className="text-[#007aff] font-semibold uppercase tracking-[0.3em] text-[11px]">Our Story</span>
               <div className="flex-1 h-[1px] bg-gray-100" />
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-black text-[#007aff] leading-tight mb-8">
+            <h2 className="text-3xl md:text-3xl font-semibold text-[#007aff] leading-tight mb-8">
               Crafting Memories with <br /> 
-              <span className="text-[#253061] italic font-serif">Personalized Care.</span>
+              <span className="text-[#253061]  font-serif">Personalized Care.</span>
             </h2>
 
             <div className="space-y-6 text-gray-500 font-medium leading-relaxed">
               <p>
-                At <span className="text-[#253061] font-bold">Teakwood Holidays</span>, we don’t just plan trips—we design romantic experiences. Built on the trusted foundation of Teakwood Travels, our division is dedicated exclusively to leisure travel and honeymoon planning.
+                At <span className="text-[#253061] font-semibold">Teakwood Holidays</span>, we don’t just plan trips—we design romantic experiences. Built on the trusted foundation of Teakwood Travels, our division is dedicated exclusively to leisure travel and honeymoon planning.
               </p>
               <p>
                 Whether it's the misty hills of Munnar or the French coastal charm of Pondicherry, our local expertise ensures better routes, handpicked stays, and seamless execution.
@@ -81,7 +81,7 @@ const AboutSection = () => {
                   <div className={`w-12 h-12 shrink-0 rounded-2xl bg-gray-50 flex items-center justify-center text-2xl ${item.color} group-hover:bg-[#253061] group-hover:text-white transition-all duration-300`}>
                     {item.icon}
                   </div>
-                  <span className="text-[13px] font-black text-[#253061] leading-tight uppercase tracking-tight">
+                  <span className="text-[13px] font-semibold text-[#253061] leading-tight uppercase tracking-tight">
                     {item.label}
                   </span>
                 </div>
