@@ -49,14 +49,11 @@ const Footer = () => {
             </p>
             
             <div className="flex gap-4">
-              <Link href="#" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
+              <Link href="https://www.instagram.com/teakwood_travels/?hl=en" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
                 <RiInstagramLine />
               </Link>
-              <Link href="#" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
+              <Link href="https://www.facebook.com/Teakwoodtravelsindia" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
                 <RiFacebookCircleFill />
-              </Link>
-              <Link href="#" aria-label="WhatsApp" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
-                <RiWhatsappLine />
               </Link>
             </div>
           </div>
