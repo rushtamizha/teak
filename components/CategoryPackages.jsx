@@ -17,21 +17,6 @@ import "swiper/css/pagination";
 const Packages = () => {
   const [activeTab, setActiveTab] = useState("Domestic");
 
-  // const domesticPackages = [
-  //   { name: "Misty Munnar", loc: "Kerala", days: "3D/2N", img: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?q=80&w=1200", desc: "Misty tea gardens & romantic hills." },
-  //   { name: "French Vibes", loc: "Pondicherry", days: "3D/2N", img: "https://images.unsplash.com/photo-1582512390368-7f9754f3050c?q=80&w=1200", desc: "White Town stays & beach romance." },
-  //   { name: "Heavenly Kashmir", loc: "Srinagar", days: "6D/5N", img: "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?q=80&w=1200", desc: "Snow, gardens & luxury houseboats." },
-  //   { name: "Royal Udaipur", loc: "Rajasthan", days: "4D/3N", img: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1200", desc: "Palaces, lakes & heritage luxury." },
-  //   { name: "Backwater Luxury", loc: "Alleppey", days: "3D/2N", img: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?q=80&w=1200", desc: "Private houseboats & serene views." },
-  // ];
-
-  // const internationalPackages = [
-  //   { name: "Luxury Dream", loc: "Maldives", days: "4D/3N", img: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=1200", desc: "Instagrammable overwater villas." },
-  //   { name: "Tropical Bliss", loc: "Bali", days: "6D/5N", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1200", desc: "Private villas, cafes & nightlife." },
-  //   { name: "Bollywood Dream", loc: "Switzerland", days: "10D/9N", img: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200", desc: "Scenic luxury & cultural combo." },
-  //   { name: "Rising Star", loc: "Turkey", days: "7D/6N", img: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1200", desc: "Balloons, architecture & unique visuals." },
-  //   { name: "Island Romance", loc: "Mauritius", days: "6D/5N", img: "https://images.unsplash.com/photo-1550951298-5c7b95a66bfc?q=80&w=1200", desc: "Privacy + less crowd island shift." },
-  // ];
 
   const currentPackages = packages.filter((item) => item.type === activeTab);
 
@@ -41,7 +26,7 @@ const Packages = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Toggle & Header */}
@@ -134,18 +119,7 @@ const Packages = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Navigation Controls */}
-        <div className="flex items-center justify-between mt-8">
-          <div className="custom-pagination !w-auto flex gap-2"></div>
-          <div className="flex gap-4">
-            <button className="prev-btn w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-[#253061] hover:bg-[#253061] hover:text-white transition-all disabled:opacity-30">
-              <FaArrowLeft />
-            </button>
-            <button className="next-btn w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-[#253061] hover:bg-[#253061] hover:text-white transition-all disabled:opacity-30">
-              <FaArrowRight />
-            </button>
-          </div>
-        </div>
+    
       </div>
 
       <style jsx global>{`

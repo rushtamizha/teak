@@ -5,12 +5,12 @@ import Link from "next/link";
 import { 
   RiWhatsappLine, 
   RiFacebookCircleFill, 
-  RiInstagramLine, 
-  RiTwitterXLine,
+  RiInstagramLine,
   RiPhoneLine,
   RiMailLine,
   RiMapPin2Line
 } from "react-icons/ri";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,21 +22,40 @@ const Footer = () => {
           
           {/* Column 1: Brand & Bio */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold tracking-tighter">
-              TEAKWOOD<span className="text-[#007aff]">HOLIDAYS</span>
-            </h2>
+            <Link href="/" className="flex items-center gap-3 group w-fit">
+              <div className="relative w-14 h-14 transition-transform duration-500 group-hover:rotate-6 group-hover:border-blue-300 border-2 border-white rounded-full flex items-center justify-center overflow-hidden">
+                <Image 
+                  src="/logo.jpg" 
+                  alt="Teakwood Holidays" 
+                  fill
+                  priority
+                  className="object-cover rounded-full shadow-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                {/* Fixed: Changed text color from dark blue to white for visibility */}
+                <span className="font-semibold text-white tracking-wider">
+                  TEAKWOOD HOLIDAYS
+                </span>
+                <span className="text-xs font-medium text-[#007aff]">
+                  Best Honeymoon Planners
+                </span>
+              </div>
+            </Link>
+            
             <p className="text-white/60 text-sm font-medium leading-relaxed">
               Specializing in crafting romantic journeys and personalized honeymoon experiences. 
               Built on the trusted legacy of Teakwood Travels.
             </p>
+            
             <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
+              <Link href="#" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
                 <RiInstagramLine />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
+              <Link href="#" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
                 <RiFacebookCircleFill />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
+              <Link href="#" aria-label="WhatsApp" className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-[#007aff] transition-all text-xl">
                 <RiWhatsappLine />
               </Link>
             </div>
@@ -64,30 +83,32 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact Details (From your File) */}
+          {/* Column 4: Contact Details */}
           <div className="space-y-6">
             <h4 className="font-semibold text-sm uppercase tracking-[0.2em] mb-8 text-[#007aff]">Reach Us</h4>
             <div className="space-y-4 text-sm font-medium text-white/70">
               <div className="flex items-start gap-3">
-                <RiMapPin2Line className="text-[#007aff] text-xl shrink-0" />
+                <RiMapPin2Line className="text-[#007aff] text-xl shrink-0 mt-0.5" />
                 <p>Auroville Main Road, Kuyilapalayam, <br />Puducherry - 605101</p>
               </div>
-              <div className="flex items-center gap-3">
-                <RiPhoneLine className="text-[#007aff] text-xl shrink-0" />
-                <p>+91 98845 46406</p>
-                <p>+91 9994474395</p>
+              <div className="flex items-start gap-3">
+                <RiPhoneLine className="text-[#007aff] text-xl shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919884546406" className="hover:text-white transition-colors">+91 98845 46406</a>
+                  <a href="tel:+919994474395" className="hover:text-white transition-colors">+91 99944 74395</a>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <RiMailLine className="text-[#007aff] text-xl shrink-0" />
-                <p>teakwoodtravels@gmail.com</p>
+                <a href="mailto:teakwoodtravels@gmail.com" className="hover:text-white transition-colors">teakwoodtravels@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Wepzite Credit */}
+        {/* Bottom Bar: Copyright & Website Credit */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[11px] font-semibold text-white/30 uppercase tracking-widest">
+          <p className="text-[11px] font-semibold text-white/30 uppercase tracking-widest text-center md:text-left">
             © {currentYear} Teakwood Holidays. All Rights Reserved.
           </p>
           
@@ -96,6 +117,7 @@ const Footer = () => {
             <Link 
               href="https://wepzite.in" 
               target="_blank"
+              rel="noopener noreferrer"
               className="text-[#007aff] hover:text-white transition-colors font-semibold"
             >
               Wepzite.in
