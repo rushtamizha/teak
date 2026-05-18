@@ -100,8 +100,8 @@ const PackageListing = () => {
                     alt={pkg.title} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   />
-                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-semibold text-[#253061] uppercase tracking-widest shadow-sm flex items-center gap-2">
-                    <RiMapPin2Line className="text-[#007aff]" /> {pkg.location}
+                  <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-[#253061] uppercase tracking-widest shadow-sm flex items-center gap-2">
+                    <RiMapPin2Line className="  text-[#007aff]" /> {pkg.location}
                   </div>
                 </div>
 

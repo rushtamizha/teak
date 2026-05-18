@@ -86,7 +86,7 @@ const Packages = () => {
                       />
                       <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
                         <RiTimeLine className="text-[#007aff]" />
-                        <span className="text-[11px] font-semibold text-[#253061] tracking-wider">{pkg.duration}</span>
+                        <span className="text-xs font-semibold text-[#253061] tracking-wider">{pkg.duration}</span>
                       </div>
                     </div>
 
@@ -94,9 +94,9 @@ const Packages = () => {
                     <div className="p-8">
                       <div className="flex items-center gap-2 text-[#007aff] mb-2">
                         <RiMapPin2Line />
-                        <span className="text-[11px] font-semibold uppercase tracking-widest">{pkg.location}</span>
+                        <span className="text-sm font-semibold uppercase tracking-widest">{pkg.location}</span>
                       </div>
-                      <h3 className="text-2xl font-semibold text-[#253061] mb-3 group-hover:text-[#007aff] transition-colors">
+                      <h3 className="text-xl font-semibold text-[#253061] mb-3 group-hover:text-[#007aff] transition-colors">
                         {pkg.title}
                       </h3>
                       <p className="text-gray-500 font-medium text-sm leading-relaxed mb-8">
