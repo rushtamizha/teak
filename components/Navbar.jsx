@@ -74,7 +74,7 @@ const Navbar = () => {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-semibold  text-[#253061]">
+              <span className=" font-semibold  text-[#253061]">
                 TEAKWOOD HOLIDAYS
               </span>
               <span className="text-xs font-medium  text-[#007aff]">
