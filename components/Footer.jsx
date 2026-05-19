@@ -86,7 +86,7 @@ const Footer = () => {
             <div className="space-y-4 text-sm font-medium text-white/70">
               <div className="flex items-start gap-3">
                 <RiMapPin2Line className="text-[#007aff] text-xl shrink-0 mt-0.5" />
-                <p>Auroville Main Road, Kuyilapalayam, <br />Puducherry - 605101</p>
+                <p> Teakwood Travels , Auroville Main Road, Kuyilapalayam, <br />Puducherry - 605101</p>
               </div>
               <div className="flex items-start gap-3">
                 <RiPhoneLine className="text-[#007aff] text-xl shrink-0 mt-0.5" />
