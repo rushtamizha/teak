@@ -93,11 +93,13 @@ const Footer = () => {
                 <div className="flex flex-col gap-1">
                   <a href="tel:+919884546406" className="hover:text-white transition-colors">+91 98845 46406</a>
                   <a href="tel:+919994474395" className="hover:text-white transition-colors">+91 99944 74395</a>
+                   <a href="tel:+914132969395" className="hover:text-white transition-colors">+91 4132969395</a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <RiMailLine className="text-[#007aff] text-xl shrink-0" />
                 <a href="mailto:teakwoodtravels@gmail.com" className="hover:text-white transition-colors">teakwoodtravels@gmail.com</a>
+                <a href="mailto:Karuna@teakwoodtravels.com" className="hover:text-white transition-colors">Karuna@teakwoodtravels.com</a>
               </div>
             </div>
           </div>
