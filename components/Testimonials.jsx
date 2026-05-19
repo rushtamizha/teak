@@ -13,34 +13,9 @@ import Image from "next/image"
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { reviews } from "@/data";
 
 const Testimonials = () => {
-  const reviews = [
-    {
-      name: "Arun & Deepa",
-      location: "Munnar Package",
-      text: "The candlelight dinner arranged by Teakwood was magical. Every detail, from the flower bed decoration to the private cab, was executed perfectly. Truly stress-free!",
-      rating: 5,
-    },
-    {
-      name: "Sanjay Kumar",
-      location: "Pondicherry Specialist Trip",
-      text: "As promised, their local knowledge of Pondicherry is unmatched. The hotel in White Town was handpicked and beautiful. The taxi service was punctual and professional.",
-      rating: 5,
-    },
-    {
-      name: "Meera & Rahul",
-      location: "Bali International Trip",
-      text: "We were worried about international planning, but Teakwood handled our Bali visa and flights seamlessly. The water villa stay was the highlight of our honeymoon.",
-      rating: 5,
-    },
-    {
-      name: "Vikram Rathore",
-      location: "Alleppey Houseboat",
-      text: "Reliable ground handling and very transparent pricing. No hidden costs at the end of the trip. The private houseboat in Alleppey was a premium experience.",
-      rating: 5,
-    },
-  ];
 
   return (
     <section className="py-14 bg-[#f8fafc]">

@@ -16,7 +16,7 @@ import {
 // Swiper Styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import { packages } from "@/data";
+import { Banners } from "@/data";
 
 const HeroWithForm = () => {
   const [formData, setFormData] = useState({
@@ -47,10 +47,10 @@ const HeroWithForm = () => {
           loop
           className="h-full w-full"
         >
-          {packages.map((slide, i) => (
+          {Banners.map((slide, i) => (
             <SwiperSlide key={i}>
               <div className="relative h-full w-full">
-                <img src={slide.image} alt={slide.title} className="h-full w-full object-cover opacity-90 scale-105" />
+                <img src={slide.image}  className="h-full w-full object-cover opacity-90 scale-105" />
                 <div className="absolute  inset-0 bg-gradient-to-r from-[#253061]/90 via-[#253061]/50 to-transparent" />
               </div>
             </SwiperSlide>
