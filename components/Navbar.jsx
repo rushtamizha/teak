@@ -78,7 +78,7 @@ const Navbar = () => {
                 TEAKWOOD HOLIDAYS
               </span>
               <span className="text-xs font-medium  text-[#007aff]">
-                Best Honeymoon Planners
+                Crafting Perfect Honeymoons
               </span>
             </div>
           </Link>
